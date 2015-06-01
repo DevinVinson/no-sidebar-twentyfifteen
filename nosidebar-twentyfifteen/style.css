@@ -1,0 +1,79 @@
+/*
+Theme Name: No Sidebar - Twenty Fifteen
+Author: Devin Vinson
+Author URI: https://devinvinson.com
+Template: twentyfifteen
+Description: The twenty fifteen theme with the mobile layout displayed all the time (no sidebar).
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, one-columns, no-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Display mobile layout all the time */
+@media only screen and ( min-width: 46.25em ){
+	body:before { display: none; }
+	.site {
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.sidebar {
+		float: none;
+		margin-right: 0;
+		max-width: 100%;
+		width: auto;
+		position: relative !important;
+	}
+	.site-header {
+		margin: 0;
+		background-color: #fff;
+		border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+		padding: 7.6923%;
+	}
+	.main-navigation {
+		margin: 0;
+		margin-bottom: 11.1111%;
+		font-size: 16px;
+		font-size: 1.5rem;
+	}
+	.site-content {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.site-footer  {
+		display: block;
+		float: none;
+		margin: 0 7.6923%;
+		width: auto;
+	}
+	.secondary-toggle {
+		display: block;
+	}
+	.secondary {
+		background-color: #fff;
+		display: none;
+		margin: 7.6923% 7.6923% 0;
+		padding: 7.6923% 7.6923% 0;
+	}
+
+	.secondary.toggled-on {
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		display: block;
+	}
+	.social-navigation {
+		margin: 9.0909% 0;
+	}
+	.social-navigation li {
+		width: auto;
+	}
+	.widget-area {
+		margin: 9.09090% auto 0;
+	}
+}
